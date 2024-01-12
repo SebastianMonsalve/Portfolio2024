@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastian Monsalve</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/3fbe9d9b03.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="background">
+        <header>
+            <div class="banner">
+                <img src="/resources/banner2.jpg" alt="Banner image to Sebastian Monsalve" draggable="false">
+                <div class="container-switch">
+                    <div class="switch">
+                        <i class='bx bxs-sun'></i>
+                        <i class='bx bxs-moon' ></i>
+                    </div>
+                    <audio id="switchSound">
+                        <source src="/resources/sound-click.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+            </div>
+            <div class="container-info">
+                <div class="profile">
+                    <img src="/resources/5fa52569eb141.jpeg" alt="Profile photo to Sebastian Monsalve" draggable="false">
+                </div>
+                <div class="presentation">
+                    <h1 title="Sebastian Monsalve">Sebastian Monsalve<i class="fa-solid fa-circle-check" title="Verificado"></i></h1>
+                    <div class="sub">
+                        <span>@sebasmonsalve16</span>
+                        <span><i class="fa-solid fa-cake-candles"></i>16th of May</span>
+                        <span><i class="fa-solid fa-location-dot"></i>Colombian</span>
+                    </div>
+                    <p>Aspiring computer engineer drawn towards full-stack development, eagerly embracing the challenges and complexities of creating seamless and innovative digital solutions.</p>
+                    <a class="link" href="https://www.youtube.com/@SebasMonsalve16" target="_blank">sebastiandev16@gmail.com</a>
+                    <div class="social">
+                        <a href="#" class="in" title="LinkedIn"><i class="fa-solid fa-bell"></i>LinkedIn<span>⌵</span></a>
+                        <a href="#" class="soc" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="soc" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <ol id="menu">
+                    <li id="projects" onclick="showContent('projects')">Projects</li>
+                    <li id="skills" onclick="showContent('skills')">Skills</li>
+                    <li id="about" onclick="showContent('about')">About Me</li>
+                    <li id="education" onclick="showContent('education')">Education</li>
+                </ol>
+            </nav>
+            <div class="line"></div>
+        </header>
+        <div class="container-primary">
+            <div class="container" id="container">
+            </div>
+        </div>
+    </div>
+    <script src="/js/theme-mode.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
