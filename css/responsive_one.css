@@ -84,6 +84,7 @@
   }
   .container-info {
     flex-direction: column;
+    padding: 0;
   }
   .profile {
     margin: 1rem;
@@ -102,5 +103,30 @@
   }
   .image-box {
     width: 21rem;
+  }
+}
+@media screen and (max-width: 30.75rem) {
+  .banner img {
+    width: 130%;
+  }
+  .presentation {
+    width: 100%;
+  }
+  .image-project {
+    height: 14rem;
+  }
+  .content-project {
+    width: 95%;
+    padding: 0;
+  }
+  .image-profile-box {
+    width: 2rem;
+    height: 2rem;
+  }
+  .content-info-box {
+    width: 100%;
+  }
+  .image-box {
+    width: 16rem;
   }
 }
