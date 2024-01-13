@@ -23,7 +23,7 @@ function showContent(contentId) {
         author: "@sebasmonsalve16",
         verified: true,
         developedYear: 2023,
-        technologies: ["React", "NodeJS"],
+        technologies: ["React", "NodeJS", "ExpressJS", "MongoDB", "Cloudinary"],
         description:
           "PIXME. This online photo and video gallery, accessible through your favorite web browser, offers a user-friendly platform for preserving and enjoying your cherished memories. You can mark favorites, recover deleted items, and choose when to permanently remove them from your account. Additionally, it features robust security measures that allow you to recover your account in case you forget your password.",
         githubLink: "https://github.com/sebasmonsalve16/pixme",
@@ -35,7 +35,7 @@ function showContent(contentId) {
         author: "@sebasmonsalve16",
         verified: true,
         developedYear: 2023,
-        technologies: ["React", "NodeJS"],
+        technologies: ["React", "NodeJS", "ExpressJS", "MongoDB", "Cloudinary"],
         description:
           "SWIFTADMIN. This web application enables a super administrator to create administrators and users. Users can upload files that are verified by administrators. The platform is designed to facilitate professors in uploading course content, and the faculty leader (administrator) has the authority to approve it or provide constructive feedback for improvements before implementation. It's worth noting that my involvement in this project is limited to the frontend.",
         githubLink: "https://github.com/sebasmonsalve16/pixme",
@@ -77,17 +77,21 @@ function showContent(contentId) {
         project.projectTitle +
         "</h2>" +
         '<div class= "sub-project">' +
+        '<div class= "sub-info">' +
         "<span>" +
         project.author +
         ' <i class= "fa-solid fa-circle-check" title="Verificado"></i></span>' +
         "<span>Developed in " +
         project.developedYear +
         "</span>" +
+        "</div>" +
+        '<div class="sub-tech">' +
         project.technologies
           .map(function (tech) {
             return "<span>" + tech + "</span>";
           })
           .join("") +
+        "</div>" +
         "</div>" +
         "<p>" +
         project.description +
@@ -99,6 +103,7 @@ function showContent(contentId) {
     });
   } else if (contentId === "skills") {
     container.innerHTML =
+      '<div class= "container-skills">' +
       '<div class= "category">' +
       "<h3>Programming Languages</h3>" +
       "<span><i class= 'bx bxl-java'></i>Java</span>" +
@@ -123,6 +128,7 @@ function showContent(contentId) {
       "<h3>Design and Prototyping</h3>" +
       "<span><i class= 'bx bxl-figma' ></i>Figma</span>" +
       "<span><i class='bx bxs-pen' ></i>Photoshop</span>" +
+      "</div>" +
       "</div>";
   } else if (contentId === "about") {
     var aboutData = [
@@ -162,7 +168,7 @@ function showContent(contentId) {
       }" draggable="false">
             </div>
             <div class="content-info-box">
-              <h4>${aboutItem.name}</h4>
+              <h2>${aboutItem.name}</h2>
               <p>${aboutItem.content}</p>
             </div>
           </div>
