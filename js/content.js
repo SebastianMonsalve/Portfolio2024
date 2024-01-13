@@ -186,7 +186,47 @@ function showContent(contentId) {
       container.innerHTML += aboutHTML;
     });
   } else if (contentId === "education") {
-    container.innerHTML =
-      "<h2>Education</h2><p>My educational background...</p>";
+    var educationData = [
+      {
+        icon: "fa-solid fa-award",
+        period: "2021 - 2025",
+        title: "Informatics Engineering",
+        institution: "University institution of Envigado. IUE",
+      },
+      {
+        icon: "fa-solid fa-award",
+        period: "2018 - 2020",
+        title: "Computer network installation technician",
+        institution: "National Learning Service. SENA",
+      },
+      {
+        icon: "fa-solid fa-certificate",
+        period: "2020",
+        title: "Computer Maintenance Certification",
+        institution: "National Learning Service. SENA",
+      },
+      {
+        icon: "fa-solid fa-certificate",
+        period: "2022",
+        title: "Cisco Data Network Certification",
+        institution: "University institution of Envigado. IUE",
+      },
+    ];
+
+    educationData.forEach(function (educationItem) {
+      var educationHTML = `
+          <div class="education">
+              <div class="icon-edu">
+                  <i class="${educationItem.icon}" title="Education"></i>
+              </div>
+              <div class="content-edu">
+                  <h5>${educationItem.period}</h5>
+                  <h3>${educationItem.title}</h3>
+                  <p>${educationItem.institution}</p>
+              </div>
+          </div>`;
+
+      container.innerHTML += educationHTML;
+    });
   }
 }
