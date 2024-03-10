@@ -217,6 +217,12 @@ function showContent(contentId) {
         title: "Cisco Data Network Certification",
         institution: "University institution of Envigado. IUE",
       },
+      {
+        icon: "fa-solid fa-certificate",
+        period: "2024",
+        title: "Python Fundamentals Certification",
+        institution: "Skills for all with Cisco",
+      },
     ];
 
     educationData.forEach(function (educationItem) {
